@@ -44,16 +44,30 @@ resource "azurerm_resource_group" "rg" {
 }
 
 # Create a Resource Group for mobile 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg-mobile-bknd-001" {
   location = "westeurope"
   name     = "rg-mobile-bknd-001"
   tags     = var.mobile_tags
 }
-resource "azurerm_storage_account" "st" {
-  name                      = "staccdevopsrg21605"
-  resource_group_name       = azurerm_resource_group.rg.name
-  location                  = azurerm_resource_group.rg.location
+
+# Create a Storage Account for desktop 
+resource "azurerm_storage_account" "stdesktopbknd001" {
+  name                      = "stdesktopbknd001"
+  resource_group_name       = azurerm_resource_group.rg-desktop-bknd-001.name
+  location                  = "westeurope"
   account_kind              = "StorageV2"
   account_tier              = "Standard"
   account_replication_type  = "LRS"
+}
+
+# Create a Storage Account for mobile 
+resource "azurerm_storage_account" "stmobilebknd001" {
+  name                      = "stmobilebknd001"
+  resource_group_name       = azurerm_resource_group.rg-mobile-bknd-001.name
+  location                  = "westeurope"
+  account_kind              = "StorageV2"
+  account_tier              = "Standard"
+  account_replication_type  = "LRS"
+}
+
 
