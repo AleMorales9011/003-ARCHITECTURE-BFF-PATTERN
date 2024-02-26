@@ -18,7 +18,7 @@ variable "tags" {
   type = map(string)
   # Optional default value:
   default = {
-    Environment = "Production"
+    Department = "Des FEP Team"
   }
 }
 
