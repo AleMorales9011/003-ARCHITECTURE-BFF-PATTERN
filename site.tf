@@ -19,6 +19,8 @@ variable "tags" {
   # Optional default value:
   default = {
     Department = "Des FEP Team"
+    Environment = "Testing"
+
   }
 }
 
