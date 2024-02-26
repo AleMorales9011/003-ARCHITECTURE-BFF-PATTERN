@@ -70,4 +70,14 @@ resource "azurerm_storage_account" "stmobilebknd001" {
   account_replication_type  = "LRS"
 }
 
+# Create a Storage Container for desktop
+resource "azurerm_storage_container" "stdesktopUI001" {
+  name                  = "stdesktopUI001"
+  storage_account_name  = azurerm_storage_account.stdesktopbknd001.name
+}
 
+# Create a Storage Container for mobile
+resource "azurerm_storage_container" "stmobileUI001" {
+  name                  = "stmobileUI001"
+  storage_account_name  = azurerm_storage_account.stmobilebknd001.name
+}
