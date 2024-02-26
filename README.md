@@ -22,9 +22,3 @@ This project is organized into the following directories:
 - azure-pipelines: This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
 - terraform: This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
 
-<<<<<<< HEAD
-=======
-# Project Model
-![Project Model"](Images\Backends for frontends pattern.jpg)
-
->>>>>>> 8617cc6 (readme updated)
