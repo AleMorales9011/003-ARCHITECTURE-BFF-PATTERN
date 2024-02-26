@@ -36,31 +36,24 @@ variable "mobile_tags" {
 
   }
 }
-# Create Resource Group 
+# Create a Resource Group for desktop 
 resource "azurerm_resource_group" "rg" {
   location = "westeurope"
-  name     = "rg-auladevops-002"
-  tags = merge(var.tags, {
-    "workspace" = "${terraform.workspace}"
-    }
-  )
+  name     = "rg-desktop-bknd-001"
+  tags     = var.desktop_tags
 }
 
-resource "azurerm_storage_account" "site" {
+# Create a Resource Group for mobile 
+resource "azurerm_resource_group" "rg" {
+  location = "westeurope"
+  name     = "rg-mobile-bknd-001"
+  tags     = var.mobile_tags
+}
+resource "azurerm_storage_account" "st" {
   name                      = "staccdevopsrg21605"
   resource_group_name       = azurerm_resource_group.rg.name
   location                  = azurerm_resource_group.rg.location
   account_kind              = "StorageV2"
   account_tier              = "Standard"
   account_replication_type  = "LRS"
-  enable_https_traffic_only = true
 
-  static_website {
-    index_document = "index.html"
-  }
-
-  tags = merge(var.tags, {
-    "workspace" = "${terraform.workspace}"
-    }
-  )
-}
