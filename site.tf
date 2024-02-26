@@ -13,13 +13,14 @@ provider "azurerm" {
   features {}
 }
 
-# Create variables
+ # Variables for desktop department
 variable "tags" {
   type = map(string)
-  # Optional default value:
   default = {
     Department = "Des FEP Team"
     Environment = "Testing"
+    Owner = "John Doe"
+    Purpose = "Frontend"
 
   }
 }
