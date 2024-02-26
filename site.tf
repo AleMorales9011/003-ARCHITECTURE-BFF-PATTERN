@@ -13,8 +13,8 @@ provider "azurerm" {
   features {}
 }
 
- # Variables for desktop department
-variable "tags" {
+ # Tags for desktop department
+variable "desktop_tags" {
   type = map(string)
   default = {
     Department = "Des FEP Team"
@@ -25,6 +25,17 @@ variable "tags" {
   }
 }
 
+ # Tags for mobile department
+variable "mobile_tags" {
+  type = map(string)
+  default = {
+    Department = "Mob FEP Team"
+    Environment = "Testing"
+    Owner = "Jane Doe"
+    Purpose = "Frontend"
+
+  }
+}
 # Create Resource Group 
 resource "azurerm_resource_group" "rg" {
   location = "westeurope"
