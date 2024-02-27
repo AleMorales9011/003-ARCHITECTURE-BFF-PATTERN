@@ -13,6 +13,20 @@ provider "azurerm" {
   features {}
 }
 
+# Create a Resource Group for desktop 
+resource "azurerm_resource_group" "rg" {
+  location = "westeurope"
+  name     = "rg-desktop-bknd-001"
+  tags     = var.desktop_tags
+}
+
+# Create a Resource Group for mobile 
+resource "azurerm_resource_group" "rg-mobile-bknd-001" {
+  location = "westeurope"
+  name     = "rg-mobile-bknd-001"
+  tags     = var.mobile_tags
+}
+
  # Tags for desktop department
 variable "desktop_tags" {
   type = map(string)
@@ -35,19 +49,6 @@ variable "mobile_tags" {
     Purpose = "Frontend"
 
   }
-}
-# Create a Resource Group for desktop 
-resource "azurerm_resource_group" "rg" {
-  location = "westeurope"
-  name     = "rg-desktop-bknd-001"
-  tags     = var.desktop_tags
-}
-
-# Create a Resource Group for mobile 
-resource "azurerm_resource_group" "rg-mobile-bknd-001" {
-  location = "westeurope"
-  name     = "rg-mobile-bknd-001"
-  tags     = var.mobile_tags
 }
 
 # Create a Storage Account for desktop 
