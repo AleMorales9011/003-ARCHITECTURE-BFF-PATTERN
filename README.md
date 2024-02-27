@@ -22,6 +22,10 @@ The **"Backends for Frontends"** approach saved the day. Separate backends allow
 ![terraform code](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/a06788098dbdf544d83dc2a92eb1171325536c92/resource%20group%20with%20terraform.jpg)
 # New Architecture
 ![new architecture](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/new%20architechture.png)
+```hcl
+# Creating storage accounts in Azure with Terraform
+```
+![storage accounts with terraform](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/bed83074fe1931c1ec6995a2af6149e34ae3a492/storage%20accounts%20witth%20terraform.jpg)
 
 # Benefits of using the BFF pattern
 - **Improved maintainability:** By separating the backend into multiple services, you can change one service without affecting the others. This makes it easier to develop, test, and deploy changes.
