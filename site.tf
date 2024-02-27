@@ -14,7 +14,7 @@ provider "azurerm" {
 }
 
 # Create a Resource Group for desktop 
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg-desktop-bknd-001" {
   location = "westeurope"
   name     = "rg-desktop-bknd-001"
   tags     = var.desktop_tags
