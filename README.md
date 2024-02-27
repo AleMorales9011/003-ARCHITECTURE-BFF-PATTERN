@@ -5,6 +5,11 @@ This project demonstrates how to use Azure DevOps and Terraform to implement the
 # Problem
 "Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their **single backend became a bottleneck**. Balancing the needs of both platforms slowed development and frustrated teams.
 
+```python
+# Generic Python code snippet demonstrating an API request to a backend service, which could be part of a BFF implementation:
+```
+![python code](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/ad87f3320cc36d2140e2bf61e567f696dca749e0/python%20code.jpg)
+
 # Old Architecture
 ![old architecture](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/old%20architechture.png)
 
