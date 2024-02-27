@@ -15,7 +15,11 @@ This project demonstrates how to use Azure DevOps and Terraform to implement the
 
 # Solution
 The **"Backends for Frontends"** approach saved the day. Separate backends allowed independent optimization for each platform, improving app speed and user experience. Sarah, the owner, could now focus on individual improvements, fostering efficient development and a happier team. In addition, a ***CI/CD pipeline** will be implemented in Azure DevOps to allow Sarah to create, modify, or eliminate infrastructure in the Azure Cloud from her local environment every time she commits a change **increasing its development team productivity by over 80%**.
+```hcl
+# Creating cloud resources with Terraform
+````
 
+![terraform code](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/a06788098dbdf544d83dc2a92eb1171325536c92/resource%20group%20with%20terraform.jpg)
 # New Architecture
 ![new architecture](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/new%20architechture.png)
 
