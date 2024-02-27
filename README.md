@@ -34,6 +34,10 @@ The **"Backends for Frontends"** approach saved the day. Separate backends allow
 
 #  CI/CD Pipeline in Azure Dev Ops.
 ![Pipeline](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Backend%20for%20Fronteds%20model.png)
+```HCL
+# Initializing CI/CD pipeline with Terraform
+```
+![pipeline init](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/0bda46320218fa3a2e28934cc13377a131ea86bd/Pipeline%20init.jpg)
 
 # Benefits of CI/CD
 - **Faster software delivery:** CI/CD automates the build, test, and deployment process, significantly reducing the time it takes to deliver new features and bug fixes. This can lead to up to 100 times more frequent deployments.
