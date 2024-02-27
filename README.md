@@ -1,15 +1,32 @@
 # Azure DevOps and Terraform for Backends for Frontends(BFF) Pattern 
-This project demonstrates how to use Azure DevOps and Terraform to implement the Backends for Frontends (BFF) pattern in Microsoft Azure. The BFF pattern is a software architecture pattern that allows you to create separate backend services for different frontend applications or interfaces. This approach helps to improve the maintainability, scalability, and performance of your applications. 
+This project demonstrates how to use Azure DevOps and Terraform to implement the Backends for Frontends (BFF) pattern in Microsoft Azure. The BFF pattern is a software architecture pattern that allows you to create separate backend services for different front-end applications or interfaces. This approach helps improve your applications' maintainability, scalability, and performance. 
 
 # Problem
 "Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their single backend became a bottleneck. Balancing the needs of both platforms slowed development and frustrated teams.
 
-The "Backends for Frontends" approach saved the day. Separate backends allowed independent optimization for each platform, improving app speed and user experience. Sarah, the owner, could now focus on individual improvements, fostering efficient development and a happier team. This is just one example of how the BFF pattern empowers small businesses to deliver exceptional experiences across diverse platforms.
+# Old Architecture
+![old architecture]()
+
+# Solution
+The "Backends for Frontends" approach saved the day. Separate backends allowed independent optimization for each platform, improving app speed and user experience. Sarah, the owner, could now focus on individual improvements, fostering efficient development and a happier team. In addition, a CI/CD pipeline will be implemented in Azure DevOps to allow Sarah to create, modify, or eliminate infrastructure in the Azure Cloud from her local environment every time she commits a change increasing its development team productivity by over 80%.
+
+# New Architecture
+![new architecture]()
 
 # Benefits of using the BFF pattern
-- Improved maintainability: By separating the backend into multiple services, you can make changes to one service without affecting the others. This makes it easier to develop, test, and deploy changes.
+- Improved maintainability: By separating the backend into multiple services, you can change one service without affecting the others. This makes it easier to develop, test, and deploy changes.
 - Increased scalability: You can scale each backend service independently to meet the specific needs of the frontend application it serves.
 - Enhanced performance: By tailoring the backend services to the specific requirements of each frontend, you can improve the overall performance of your application. 
+
+#  CI/CD Pipeline in Azure Dev Ops.
+![Pipeline]()
+
+# Benefits of CI/CD
+- Faster software delivery: CI/CD automates the build, test, and deployment process, significantly reducing the time it takes to deliver new features and bug fixes. This can lead to up to 100 times more frequent deployments.
+
+- Improved software quality: By automating testing within the pipeline, CI/CD helps identify and fix bugs early in the development process, leading to higher-quality software. This can result in a 30% to 90% reduction in defect escape rate.
+
+- Increased collaboration and efficiency: CI/CD pipelines promote collaboration by providing a central location for developers to track the progress of changes and identify potential issues early on. This streamlines the development process and reduces manual work, potentially leading to a 50% to 90% reduction in lead time for changes.
 
 # Pre-requisites
 - An Azure subscription
@@ -21,4 +38,14 @@ This project is organized into the following directories:
 
 - azure-pipelines: This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
 - terraform: This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
+
+# Created Resources
+![]()
+
+# Running Pipeline
+![]()
+
+
+
+
 
