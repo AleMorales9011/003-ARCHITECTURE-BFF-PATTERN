@@ -72,13 +72,13 @@ resource "azurerm_storage_account" "stmobilebknd001" {
 }
 
 # Create a Storage Container for desktop
-resource "azurerm_storage_container" "stdesktopUI001" {
-  name                  = "stdesktopUI001"
+resource "azurerm_storage_container" "stdesktopui001" {
+  name                  = "stdesktopui001"
   storage_account_name  = azurerm_storage_account.stdesktopbknd001.name
 }
 
 # Create a Storage Container for mobile
-resource "azurerm_storage_container" "stmobileUI001" {
-  name                  = "stmobileUI001"
+resource "azurerm_storage_container" "stmobileui001" {
+  name                  = "stmobileui001"
   storage_account_name  = azurerm_storage_account.stmobilebknd001.name
 }
