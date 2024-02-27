@@ -1,33 +1,33 @@
 ![Repo header](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Repo%20header.jpg)
 # Azure DevOps and Terraform for Backends for Frontends(BFF) Pattern 
-This project demonstrates how to use Azure DevOps and Terraform to implement the Backends for Frontends (BFF) pattern in Microsoft Azure. The BFF pattern is a software architecture pattern that allows you to create separate backend services for different front-end applications or interfaces. This approach helps improve your applications' maintainability, scalability, and performance. 
+This project demonstrates how to use Azure DevOps and Terraform to implement the Backends for Frontends (BFF) pattern in Microsoft Azure. The BFF pattern is a software architecture pattern that allows you to create separate backend services for different front-end applications or interfaces. This approach helps **improve your applications' maintainability, scalability, and performance**. 
 
 # Problem
-"Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their single backend became a bottleneck. Balancing the needs of both platforms slowed development and frustrated teams.
+"Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their **single backend became a bottleneck**. Balancing the needs of both platforms slowed development and frustrated teams.
 
 # Old Architecture
 ![old architecture](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/old%20architechture.png)
 
 # Solution
-The "Backends for Frontends" approach saved the day. Separate backends allowed independent optimization for each platform, improving app speed and user experience. Sarah, the owner, could now focus on individual improvements, fostering efficient development and a happier team. In addition, a CI/CD pipeline will be implemented in Azure DevOps to allow Sarah to create, modify, or eliminate infrastructure in the Azure Cloud from her local environment every time she commits a change increasing its development team productivity by over 80%.
+The **"Backends for Frontends"** approach saved the day. Separate backends allowed independent optimization for each platform, improving app speed and user experience. Sarah, the owner, could now focus on individual improvements, fostering efficient development and a happier team. In addition, a ***CI/CD pipeline** will be implemented in Azure DevOps to allow Sarah to create, modify, or eliminate infrastructure in the Azure Cloud from her local environment every time she commits a change **increasing its development team productivity by over 80%**.
 
 # New Architecture
 ![new architecture](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/new%20architechture.png)
 
 # Benefits of using the BFF pattern
-- Improved maintainability: By separating the backend into multiple services, you can change one service without affecting the others. This makes it easier to develop, test, and deploy changes.
-- Increased scalability: You can scale each backend service independently to meet the specific needs of the frontend application it serves.
-- Enhanced performance: By tailoring the backend services to the specific requirements of each frontend, you can improve the overall performance of your application. 
+- **Improved maintainability:** By separating the backend into multiple services, you can change one service without affecting the others. This makes it easier to develop, test, and deploy changes.
+- **Increased scalability:** You can scale each backend service independently to meet the specific needs of the frontend application it serves.
+- **Enhanced performance:** By tailoring the backend services to the specific requirements of each frontend, you can improve the overall performance of your application. 
 
 #  CI/CD Pipeline in Azure Dev Ops.
 ![Pipeline](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Backend%20for%20Fronteds%20model.png)
 
 # Benefits of CI/CD
-- Faster software delivery: CI/CD automates the build, test, and deployment process, significantly reducing the time it takes to deliver new features and bug fixes. This can lead to up to 100 times more frequent deployments.
+- **Faster software delivery:** CI/CD automates the build, test, and deployment process, significantly reducing the time it takes to deliver new features and bug fixes. This can lead to up to 100 times more frequent deployments.
 
-- Improved software quality: By automating testing within the pipeline, CI/CD helps identify and fix bugs early in the development process, leading to higher-quality software. This can result in a 30% to 90% reduction in defect escape rate.
+- **Improved software quality:** By automating testing within the pipeline, CI/CD helps identify and fix bugs early in the development process, leading to higher-quality software. This can result in a 30% to 90% reduction in defect escape rate.
 
-- Increased collaboration and efficiency: CI/CD pipelines promote collaboration by providing a central location for developers to track the progress of changes and identify potential issues early on. This streamlines the development process and reduces manual work, potentially leading to a 50% to 90% reduction in lead time for changes.
+- **Increased collaboration and efficiency:** CI/CD pipelines promote collaboration by providing a central location for developers to track the progress of changes and identify potential issues early on. This streamlines the development process and reduces manual work, potentially leading to a 50% to 90% reduction in lead time for changes.
 
 # Pre-requisites
 - An Azure subscription
@@ -37,8 +37,8 @@ The "Backends for Frontends" approach saved the day. Separate backends allowed i
 # Project Structure
 This project is organized into the following directories:
 
-- azure-pipelines: This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
-- terraform: This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
+- **azure-pipelines:** This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
+- **terraform:** This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
 
 # Created Resources
 ![Resources](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Resources%20created.jpg)
