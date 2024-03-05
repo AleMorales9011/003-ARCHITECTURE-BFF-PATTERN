@@ -34,7 +34,7 @@ The **"Backends for Frontends"** approach saved the day. Separate backends allow
 
 #  CI/CD Pipeline in Azure Dev Ops.
 ![Pipeline](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Backend%20for%20Fronteds%20model.png)
-```python
+```
 # import math
 Initializing CI/CD pipeline with Terraform
 ```
