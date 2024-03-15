@@ -6,6 +6,17 @@ This project demonstrates how to use `Azure DevOps and Terraform` to implement t
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=for-the-badge&logo=postgresql&logoColor=FF00F6&color:FFF)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=FF00F6&color:FFF)
 
+# Pre-requisites
+>- An Azure subscription
+>- An Azure DevOps organization
+>- Terraform installed and configured
+
+# Project Structure
+This project is organized into the following directories:
+
+>- **azure-pipelines:** This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
+>- **terraform:** This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
+
 # Problem
 "Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their **single backend became a bottleneck**. Balancing the needs of both platforms slowed development and frustrated teams.
 
@@ -49,17 +60,6 @@ The **"Backends for Frontends"** approach saved the day. `Separate backends allo
 >- **Improved software quality:** By automating testing within the pipeline, CI/CD `helps identify and fix bugs early` in the development process, leading to higher-quality software. This can result in a 30% to 90% reduction in defect escape rate.
 
 >- **Increased collaboration and efficiency:** CI/CD pipelines `promote collaboration` by providing a central location for developers to track the progress of changes and identify potential issues early on. This streamlines the development process and reduces manual work, potentially leading to a 50% to 90% reduction in lead time for changes.
-
-# Pre-requisites
->- An Azure subscription
->- An Azure DevOps organization
->- Terraform installed and configured
-
-# Project Structure
-This project is organized into the following directories:
-
->- **azure-pipelines:** This directory contains the Azure Pipelines YAML files that define the CI/CD pipeline for deploying the infrastructure and backend services.
->- **terraform:** This directory contains the Terraform configuration files that define the infrastructure resources in Azure.
 
 # Created Resources
 ![Resources](https://github.com/AleMorales9011/Entendendo-na-Pratica-a-Cultura-DevOps-com-Azure-DevOps/blob/120f2225812e22f00b136ec06b5b625668ad4daa/Resources%20created.jpg)
