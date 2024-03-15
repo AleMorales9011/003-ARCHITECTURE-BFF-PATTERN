@@ -2,6 +2,10 @@
 # 003-ARCHITECTURE-BFF PATTERN 
 This project demonstrates how to use `Azure DevOps and Terraform` to implement the Backends for Frontends (BFF) pattern in Microsoft Azure. The BFF pattern is a software architecture pattern that allows you to create separate backend services for different front-end applications or interfaces. This approach helps **improve your applications' maintainability, scalability, and performance**. 
 
+![Linux](https://img.shields.io/badge/Linux-000?style=for-the-badge&logo=linux&logoColor=FF00F6&color:FFF)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=for-the-badge&logo=postgresql&logoColor=FF00F6&color:FFF)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=FF00F6&color:FFF)
+
 # Problem
 "Crafty Corner," a small online craft store, thrived with its website. But as they launched a mobile app, their **single backend became a bottleneck**. Balancing the needs of both platforms slowed development and frustrated teams.
 
